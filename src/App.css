@@ -177,7 +177,7 @@
     margin-bottom: 32px;
     border-bottom: 1px solid var(--border-color);
     padding: 13px 13px 13px;
-    background: var(--bg-sidebar);
+    background: var(--topbar);
     border-radius: 5px;
 }
 

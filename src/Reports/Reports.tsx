@@ -102,7 +102,7 @@ function Reports() {
                               <td>0</td>
                               <td>100%</td>
                               <td>
-                                <span className="status-chip no-issues">{t("status.noIssues")}"</span>
+                                <span className="status-chip no-issues">{t("status.noIssues")}</span>
                               </td>
                               <td>
                                 <button className="btn-view">📥 PDF</button>

@@ -26,7 +26,7 @@ function Dashboard() {
             <StatCard
               icon={ dark ? Dashboard2Dark : Dashboard2Light}
               title={t('dashboard.activeProjects')}
-              value="18"
+              value="4"
               subTitle={t("dashboard.activeProjectsSub")}
               className="active-p"
             />

@@ -1,0 +1,140 @@
+.settings-container-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+}
+
+.form-row-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.input-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.input-field-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.input-field-group input, .input-field-group select {
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    outline: none;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-weight: 600;
+    width: 100%;
+}
+
+.toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+.switch input { opacity: 0; width: 0; height: 0; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #cbd5e1;
+    transition: .3s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider { background-color: var(--accent); }
+input:checked + .slider:before { transform: translateX(20px); }
+
+.card-header.settings {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.avatar-large.settings {
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+    transition: 1s ease;
+    position: relative;
+}
+
+.avatar-large.settings:hover {
+    background: #6029BE;
+    color: #616C7C;
+}
+
+.edit-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.avatar-large.settings:hover .edit-icon {
+  opacity: 0.8;
+}
+
+.btn-view.settings {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.settings-block {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.btn-action-primary.settings {
+    margin-top: 12px;
+}
+
+.input-field-group.settings {
+    margin-top: 16px;
+}
+
+.card.reports, .card.settings, .card.arinspection {
+    transform: none;
+    box-shadow: none;
+}

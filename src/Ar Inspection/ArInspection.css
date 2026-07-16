@@ -1,0 +1,40 @@
+.card.arinspection {
+    padding: 40px;
+    text-align: center;
+}
+
+.glass {
+    font-size: 64px;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.texta {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.btn-action-primary.arinspection {
+    background: var(--bg-input);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+.btn-action-primary.arinspection:hover {
+    transform: scale(1.03);
+}
+
+.ptext {
+    color: var(--text-secondary);
+    max-width: 420px;
+    margin:0 auto 16px;
+}
+
+.text2 {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

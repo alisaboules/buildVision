@@ -1,12 +1,13 @@
+import './Sidebar.css';
 import { NavLink } from "react-router-dom";
-import houseIcon from "../assets/house.svg";
-import DashboardIcon from "../assets/dashboard.svg?react";
-import ProjectsIcon from "../assets/projects.svg?react";
-import ArInspectionIcon from "../assets/arInspection.svg?react";
-import AiAnalysisIcon from "../assets/aiAnalysis.svg?react";
-import ReportsIcon from "../assets/reports.svg?react";
-import SettingsIcon from "../assets/setting.svg?react";
-import { useLanguage } from "../Language/languageContext";
+import houseIcon from "../../assets/house.svg";
+import DashboardIcon from "../../assets/dashboard.svg?react";
+import ProjectsIcon from "../../assets/projects.svg?react";
+import ArInspectionIcon from "../../assets/arInspection.svg?react";
+import AiAnalysisIcon from "../../assets/aiAnalysis.svg?react";
+import ReportsIcon from "../../assets/reports.svg?react";
+import SettingsIcon from "../../assets/setting.svg?react";
+import { useLanguage } from '../../Language/languageContext';
 
 type MenuItem = {
   path: string;
@@ -47,7 +48,7 @@ const menuItems: MenuItem[] = [
   },
 ];
 
-function Panels() {
+function Sidebar() {
   const {t} = useLanguage();
   return (
     <aside className="sidebar">
@@ -87,4 +88,4 @@ function Panels() {
   );
 }
 
-export { Panels };
+export { Sidebar };

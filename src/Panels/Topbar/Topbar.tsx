@@ -1,10 +1,11 @@
 import React from "react";
+import "./Topbar.css";
 
 interface TopBarProps {
   title: string;
 }
 
-const TopBar: React.FC<TopBarProps> = ({ title }) => {
+const Topbar: React.FC<TopBarProps> = ({ title }) => {
   return (
     <div className="topbar">
       <div className="topbar-left">
@@ -36,4 +37,4 @@ const TopBar: React.FC<TopBarProps> = ({ title }) => {
   );
 };
 
-export { TopBar };
+export { Topbar };

@@ -1,12 +1,13 @@
 import './App.css'
 import { BrowserRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
-import { Panels } from './Panels/Panels'
+
 import { Projects } from './Projects/Projects';
 import { Dashboard } from './Dashboard/Dashboard';
 import { AiAnalysis } from './AI Analysis/AiAnalysis';
 import { ArInspection } from './Ar Inspection/ArInspection';
 import { Reports } from './Reports/Reports';
 import { Settings } from './Settings/Settings';
+import { Sidebar } from './Panels/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
 function Layout() {
   return (
     <div className="app-layout">
-      <Panels />
+      <Sidebar />
 
       <main className="content">
         <Outlet />
